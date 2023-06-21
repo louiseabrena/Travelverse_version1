@@ -3,8 +3,6 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-
-use App\Models\User;
 use App\Models\Blog;
 
 /**
@@ -22,7 +20,6 @@ class CommentFactory extends Factory
         return [
             'readerName' => $this->faker->firstName(),
             'commentContent' => $this->faker->sentence(),
-            'user_id' => User::all()->random(),
             'blog_id' => Blog::all()->random(),
         ];
     }

@@ -4,7 +4,12 @@
 
 <section class="w3-padding">
 
-    <form method="post" action="/console/login" novalidate>
+    <h2>Login to your Travelverse</h2>
+    <div class="add">
+    <a href="/register" class="w3-button w3-brown">Register</a>
+    </div>
+
+    <form method="post" action="/login" novalidate>
 
         @csrf
 
@@ -29,10 +34,9 @@
             @endif
         </div>
 
-        <button type="submit">Log In</button>
+        <button type="submit" class="w3-button w3-brown">Log In</button>
 
     </form>
-      <a href="/console/register">Register</a>
 
 </section>
 

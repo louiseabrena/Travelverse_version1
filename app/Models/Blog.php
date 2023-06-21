@@ -18,6 +18,7 @@ class Blog extends Model
         'content',
         'topic_id',
         'user_id',
+        'comment_id',
     ];
 
     public function topic()
@@ -27,7 +28,12 @@ class Blog extends Model
 
     public function user()
     {
-        return $this->belongsTo(USer::class, 'user_id');
+        return $this->belongsTo(User::class, 'user_id');
+    }  
+    
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 
 }

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+Thai:wght@500&family=Press+Start+2P&display=swap");
+
+header {
+    background-color: white;
+    font-family: "Noto Sans Thai", sans-serif;
+    padding-bottom: 5mm;
+    padding-top: 5mm;
+}
+
+body {
+    background-color: #dcd1cb;
+}
+
+.navigation a:hover {
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    font-family: "Press Start 2P", cursive;
+    font-size: 10mm;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.navigation {
+    font-family: "Noto Sans Thai", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    font-size: 5mm;
+    padding-top: 3mm;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #966b2c;
+}
+.search {
+    float: right;
+    margin-right: 2mm;
+}
+
+.home,
+.homepage,
+.list,
+.searchPage {
+    margin: 8mm;
+}
+
+.welcome,
+h2 {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+}
+
+.blogsInfo {
+    float: right;
+}
+.add {
+    text-align: center;
+    font-size: 4mm;
+}
+
+button {
+    text-align: center;
+}

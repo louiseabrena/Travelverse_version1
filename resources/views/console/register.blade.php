@@ -5,8 +5,11 @@
 <section class="w3-padding">
 
     <h2>Register to Travelverse</h2>
+    <div class="add">
+    <a href="/login" class="w3-button w3-brown">Login</a>
+    </div>
 
-    <form method="post" action="/console/register" novalidate class="w3-margin-bottom">
+    <form method="post" action="/register" novalidate class="w3-margin-bottom">
 
         @csrf
 
@@ -50,11 +53,9 @@
             @endif
         </div>
 
-        <button type="submit" class="w3-button w3-green">Register</button>
+            <button type="submit" class="w3-button w3-brown">Register</button>
 
     </form>
-
-    <a href="/console/login">Login</a>
 
 </section>
 

@@ -1,18 +1,18 @@
-@extends ('layout.frontend', ['title' => 'Home'])
+@extends ('layout.console', ['title' => 'Home'])
 
 @section ('content')
 
-<section class="w3-padding">
+<section class="home">
         
 <section class="w3-padding w3-container">
+            <h1 class="welcome">Welcome to Travelverse<i class="fa-solid fa-cart-flatbed-suitcase"></i>!</h1>
+            <br>
     @foreach ($blogs as $blog)
-                <h1>{{$blog->title}}</h1>
-                <p>{!!$blog->content!!}</p>
-                <p>{{$blog->user_lastName}}</p>
+                <a href="/blogs/page/{{$blog->id}}"><h1 class="title">{{$blog->title}}</h1></a>  
+                <h4>{{$blog->user->firstName}} {{$blog->user->lastName}}</h3>
                 <p>{{$blog->created_at->format('M j, Y')}}</p>
-                <hr>
+    <hr>
     @endforeach
-
 </section>
 
 @endsection

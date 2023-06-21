@@ -10,12 +10,23 @@
     <link rel="stylesheet" href="{{url('app.css')}}">
 
     <script src="{{url('app.js')}}"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
+
+            <style type="text/css">
+                .ck-editor__editable_inline{
+                    height: 300px;
+                }
+            </style>
     
 </head>
 <body>
 
 <header class="w3-padding">
     <a href="/" class="w3-text-brown"><h1>Travelverse</h1></a>
+    <form method="get" action="{{url('/console/blogs/search')}}" novalidate class="w3-margin-bottom">
+        <input type="search" name="query" id="title" placeholder="Searh Blogs">
+        <button type="submit" class="w3-button w3-green">Search</button>
+    </form>
     @if (Auth::check()) 
         <a href="/">Home</a> |
         <a href="/console/blogs/homepage">Travelverse Page</a> |

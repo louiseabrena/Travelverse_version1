@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     use HasFactory;
+     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'readerName',
+        'commentContent',
+    ];
+
+    public function blog()
+    {
+        return $this->belongsTo(Blog::class, 'blog_id');
+    }
 }

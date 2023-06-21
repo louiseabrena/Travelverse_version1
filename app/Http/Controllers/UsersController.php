@@ -33,7 +33,7 @@ class UsersController extends Controller
         $user->password = $attributes['password'];
         $user->save();
 
-        return redirect('/console/login')
+        return redirect('/login')
             ->with('message', 'Account creation successful!');
     }
 

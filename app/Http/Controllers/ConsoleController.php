@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use App\Models\Blog;
+use App\Models\User;
 use App\Http\BlogsController;
 
 class ConsoleController extends Controller
 {
-    
     public function logout()
     {
         auth()->logout();
@@ -29,12 +29,11 @@ class ConsoleController extends Controller
 
         if(auth()->attempt($attributes))
         {
-            return redirect('/console/blogs/homepage');
+            return redirect('/');
         }
         
         return back()
             ->withInput()
             ->withErrors(['email' => 'Invalid email/password combination']);
     }
-
 }
