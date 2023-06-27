@@ -11,8 +11,13 @@ Deployed page: https://travelverse.louiseabrena.ca
 - Register new users and Log in for users page
 
 ### Should have features
-- Search button
+- Search button for blogs
 - Listing comments and comment form
 
 ### Nice to have features
 - Bloggers have a link to share to friends and family
+
+### Next steps
+- Create a profile page for bloggers to connect more to their readers
+- Search button for users
+- Filter tag for each countries for readers to be morre organize in searching
